@@ -1,0 +1,81 @@
+{
+  "locales": {
+    "en": "EN",
+    "fr": "FR",
+    "nl": "NL"
+  },
+  "welcome":{
+    "title": ""
+  },
+  "resume": {
+    "objective": {
+      "title": "Objective",
+      "text": "To stay challenged and keep inspired. To learn as much as I can and pass on what I’ve learned."
+    },
+    "skills": {
+      "title": "Skills / Software",
+      "top": "Online Gaming, Mobile Phone Apps, Cloud computing",
+      "frontend": {
+        "title": "Front-End",
+        "text": "Nodejs, React.js, Vue.js, Angular, Linux, Docker, CI/CD, DevOps, Azure, AWS, Azure DevOps Server, Ansible, Puppet, Chef, TeamCity, Kubernetes, JIRA, Selenium"
+      },
+      "backend": {
+        "title": "Back-End",
+        "text": "Nodejs, Linux, Docker, CI/CD, DevOps, Azure, AWS, Azure DevOps Server, Ansible, Puppet, Chef, TeamCity, Kubernetes, JIRA, Selenium"
+      }
+    },
+    "recentEducation": {
+      "title": "Recent professional education",
+      "educ": [
+        "Linux",
+        "Linux",
+        "PHP",
+        "Animation"
+      ]
+    },
+    "languages": {
+      "title": "Languages",
+      "lang": [
+        "Dutch native language",
+        "French fluent (spoken, read, written)",
+        "English fluent (spoken, read, written)"
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "text": "All multimedia web development skills: PHP, SQL, HTML5, CSS3, Jquery, AS3, video editing, compositing, 3D modelling, texturing, animation, ... "
+    },
+    "experience" : {
+      "title": "Experience",
+      "current":{
+        "title": "Current position",
+        "text": "Freelance FullStack development & DevOps Services"
+      },
+      "items": [
+        {
+          "place": "Brussels",
+          "date": "March 2018 - Sept 2021",
+          "company": "HelpCare",
+          "title": "Tech Lead & Solution Architect",
+          "content": "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
+          "list":["test 1", "test 1", "test 1", "test 1"]
+        },
+        {
+          "place": "Brussels EN",
+          "date": "March 2011 - June 2019",
+          "company": "Nationale Loterij",
+          "title": "DevOPs & Senior Game developer",
+          "content": "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
+          "list":["test 1", "test 1", "test 1", "test 1"]
+        },
+        {
+          "place": "Brussels",
+          "date": "March 2003 - June 2005",
+          "company": "Nationale Loterij",
+          "title": "DevOPs & Senior Game developer",
+          "content": "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae."
+        }
+      ]
+    }
+  }
+}

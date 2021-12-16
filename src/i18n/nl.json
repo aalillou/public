@@ -1,0 +1,17 @@
+{
+  "locales": {
+    "en": "EN",
+    "fr": "FR",
+    "nl": "NL"
+  },
+  "welcome":{
+    "title": "Het gemak van het boeken van transport."
+  },
+  "resume": {
+    "objective": {
+      "title": "Objective NL",
+      "text": "Om uitgedaagd en geïnspireerd te blijven. Zoveel mogelijk leren en doorgeven wat ik heb geleerd."
+    },
+    "experience" : {}
+  }
+}

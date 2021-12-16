@@ -1,0 +1,63 @@
+.resume {
+  width: 850px;
+  margin: 0 auto;
+  font-size: 1em;
+  .head-name {
+    font-size: 2em;
+  }
+  .head-title {
+    font-size: 1.2em;
+  }
+  .head-contact {
+    margin-top: 12px;
+    line-height: 1.1;
+  }
+  .resume-title {
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  .resume-subtitle {
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+  }
+  .resume-text {
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+  }
+  .resume-tag {
+    color: rgb(61, 61, 61);
+    .date {
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+    }
+    .place {
+      font-size: 1.1em;
+    }
+  }
+  ul.line-container {
+    position: relative;
+    padding: 0;
+    padding-left: 14rem;
+    .line-item {
+      display: flex;
+      justify-content: center;
+    }
+    .item-tag {
+      width: 170px;
+      left: -14rem;
+      align-self: center;
+      text-align: right;
+    }
+    .item-symbol {
+      align-self: center;
+      display: flex;
+    }
+    .item-circle {
+      align-self: center;
+    }
+    &:after {
+      border: solid 1px #e4e1fe;
+      left: 13rem;
+    }
+  }
+}

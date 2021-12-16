@@ -1,0 +1,20 @@
+version: "3.1"
+services:
+  public:
+    image: 'nginx:alpine'
+    container_name: moway-public
+    restart: always
+    ports:
+      - '8089:80'
+    volumes:
+      - './dist:/usr/share/nginx/html'
+      - './nginx:/etc/nginx/conf.d'
+    environment:
+      VIRTUAL_HOST: www.moway.be
+      VIRTUAL_PORT: 8089
+      LETSENCRYPT_HOST: www.moway.be
+      LETSENCRYPT_EMAIL: info@moway.be
+networks:
+  default:
+    external:
+      name: webproxy

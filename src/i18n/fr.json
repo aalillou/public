@@ -1,0 +1,36 @@
+{
+  "locales": {
+    "en": "EN",
+    "fr": "FR",
+    "nl": "NL"
+  },
+  "welcome":{
+    "title": "La facilité de réserver du transport."
+  },
+  "resume": {
+    "objective": {
+      "title": "",
+      "text": ""
+    },
+    "experience" : {
+      "title": "experience",
+      "items": [
+        {
+          "place": "Brussels FR",
+          "date": "March 2003 - June 2005",
+          "company": "Nationale Loterij",
+          "title": "DevOPs & Senior Game developer",
+          "content": "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
+          "list":["test 1", "test 1", "test 1", "test 1"]
+        },
+        {
+          "place": "Brussels",
+          "date": "March 2003 - June 2005",
+          "company": "Nationale Loterij",
+          "title": "DevOPs & Senior Game developer",
+          "content": "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae."
+        }
+      ]
+    }
+  }
+}
