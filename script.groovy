@@ -1,5 +1,8 @@
 def buildApp() {
     echo "building the application... 2"
+    sh "npm install"
+    sh "npm run build"
+
 }
 
 def testApp() {
