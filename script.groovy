@@ -16,12 +16,10 @@ def deployApp() {
   sshagent(credentials: ['SSH_PRIVATE_KEY']) {
       echo "conneting with SSH_PRIVATE_KEY"
 
-
-
       def DEPLOY_USER = "gitlab"
       def DEPLOY_SERVER = "aws.moway.be"
       def CLIENT = "aalillou"
-      def DEPLOY_DEST = "/datadrive/www/$CLIENT.be/admin/"
+      def DEPLOY_DEST = "/datadrive/www/${CLIENT}.be/admin/"
       def shellCmd = "cd $DEPLOY_DEST && docker-compose up -d"
 
       echo "ssh ${DEPLOY_USER}@${$DEPLOY_SERVER} '$shellCmd'"
