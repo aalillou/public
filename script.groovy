@@ -22,7 +22,7 @@ def deployApp() {
       def DEPLOY_DEST = "/datadrive/www/${CLIENT}.be/admin/"
       def shellCmd = "cd $DEPLOY_DEST && docker-compose up -d"
 
-      echo "ssh ${DEPLOY_USER}@${$DEPLOY_SERVER} '$shellCmd'"
+      echo "ssh ${DEPLOY_USER}@${DEPLOY_SERVER} '$shellCmd'"
 
       // sh 'ssh -o StrictHostKeyChecking=no -l cloudbees 192.168.1.106 uname -a'
       // ssh $DEPLOY_USER@$DEPLOY_SERVER "cd $DEPLOY_DEST && docker-compose up -d"
