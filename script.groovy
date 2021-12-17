@@ -19,11 +19,14 @@ def deployApp() {
       def DEPLOY_USER = "gitlab"
       def DEPLOY_SERVER = "aws.moway.be"
       def CLIENT = "aalillou"
-      def DEPLOY_DEST = "/datadrive/www/${CLIENT}.be/public/"
+      def DEPLOY_SOURCE = "dist"
+      def DEPLOY_DEST = "/datadrive/www/${CLIENT}.be/test/"
       //def shellCmd = "cd $DEPLOY_DEST && docker-compose up -d"
       def shellCmd = "cd ${DEPLOY_DEST} && echo 'hello there' > from_jenkins.txt"
 
-      sh "ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_SERVER} '${shellCmd}'"
+      sh "rsync -rav --delete --rsync-path='mkdir -p ${DEPLOY_DEST} && rsync' ${DEPLOY_SOURCE} ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DEST}"
+
+      // sh "ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_SERVER} '${shellCmd}'"
 
       // sh 'ssh -o StrictHostKeyChecking=no -l cloudbees 192.168.1.106 uname -a'
       // ssh $DEPLOY_USER@$DEPLOY_SERVER "cd $DEPLOY_DEST && docker-compose up -d"
