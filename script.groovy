@@ -20,7 +20,8 @@ def deployApp() {
       def DEPLOY_SERVER = "aws.moway.be"
       def CLIENT = "aalillou"
       def DEPLOY_DEST = "/datadrive/www/${CLIENT}.be/admin/"
-      def shellCmd = "cd $DEPLOY_DEST && docker-compose up -d"
+      //def shellCmd = "cd $DEPLOY_DEST && docker-compose up -d"
+      def shellCmd = "cd $DEPLOY_DEST && echo 'hello' > from_jenkins.txt"
 
       echo "ssh ${DEPLOY_USER}@${DEPLOY_SERVER} '$shellCmd'"
 
