@@ -11,7 +11,12 @@ def buildImage() {
 }
 
 def deployApp() {
-    echo 'deploying the application...'
+    echo 'deploying the application...SSH'
+    withCredentials([usernamePassword(credentialsId: 'SSH_PRIVATE_KEY', passwordVariable: 'KEY', usernameVariable: 'USER')]) {
+        echo "KEY: $KEY"
+        echo "USER: $USER"
+    }
+
 }
 
 return this
