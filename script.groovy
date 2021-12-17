@@ -11,11 +11,11 @@ def buildImage() {
 }
 
 def deployApp() {
-    echo 'deploying the application...SSH'
-    withCredentials([usernamePassword(credentialsId: 'SSH_PRIVATE_KEY', passwordVariable: 'KEY', usernameVariable: 'USER')]) {
-        echo "KEY: $KEY"
-        echo "USER: $USER"
-    }
+  echo 'deploying the application...SSH'
+
+  sshagent(credentials: ['SSH_PRIVATE_KEY']) {
+      echo "conneting with SSH_PRIVATE_KEY"
+  }
 
 }
 
