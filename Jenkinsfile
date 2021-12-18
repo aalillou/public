@@ -12,7 +12,7 @@ pipeline {
         }
       }
     }
-    stage("build") {
+    stage("install") {
       steps {
         script {
           gv.installApp()
