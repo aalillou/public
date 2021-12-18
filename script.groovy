@@ -1,8 +1,10 @@
+def installApp() {
+    echo "Installing the application... 2"
+    // sh "npm install"
+}
 def buildApp() {
     echo "building the application... 2"
-    sh "npm install"
-    sh "npm run build"
-
+    // sh "npm run build"
 }
 
 def testApp() {
@@ -27,7 +29,7 @@ def deployApp() {
       //def shellCmd = "cd $DEPLOY_DEST && docker-compose up -d"
       def shellCmd = "cd ${DEPLOY_DEST} && echo 'hello there' > from_jenkins.txt"
 
-      sh "rsync -rav -e 'ssh -o StrictHostKeyChecking=no' --delete --rsync-path='mkdir -p ${DEPLOY_DEST} && rsync' ${DEPLOY_SOURCE} ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DEST}"
+      // sh "rsync -rav -e 'ssh -o StrictHostKeyChecking=no' --delete --rsync-path='mkdir -p ${DEPLOY_DEST} && rsync' ${DEPLOY_SOURCE} ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DEST}"
 
       // sh "ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_SERVER} '${shellCmd}'"
 

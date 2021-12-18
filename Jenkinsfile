@@ -3,12 +3,19 @@
 def gv
 
 pipeline {
-  agent any
+  agent aws
   stages {
     stage("init") {
       steps {
         script {
           gv = load "script.groovy"
+        }
+      }
+    }
+    stage("build") {
+      steps {
+        script {
+          gv.installApp()
         }
       }
     }
