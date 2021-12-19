@@ -6,7 +6,7 @@ def installApp() {
 }
 def buildApp() {
     echo "building the application..."
-    // sh "npm run build"
+    sh "npm run build"
 }
 
 def testApp() {
