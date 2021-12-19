@@ -1,11 +1,11 @@
 def installApp() {
-    echo "Installing the application... 2"
+    echo "Installing the application..."
     sh "hostname"
     sh "npm -v"
     // sh "npm install"
 }
 def buildApp() {
-    echo "building the application... 2"
+    echo "building the application..."
     // sh "npm run build"
 }
 
