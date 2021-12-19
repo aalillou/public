@@ -2,7 +2,7 @@ def installApp() {
     echo "Installing the application..."
     sh "hostname"
     sh "npm -v"
-    // sh "npm install"
+    sh "npm install"
 }
 def buildApp() {
     echo "building the application..."
