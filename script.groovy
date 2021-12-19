@@ -1,10 +1,10 @@
 def installApp() {
     echo "Installing the application... 2"
-    sh "npm install"
+    // sh "npm install"
 }
 def buildApp() {
     echo "building the application... 2"
-    sh "npm run build"
+    // sh "npm run build"
 }
 
 def testApp() {
