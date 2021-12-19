@@ -1,5 +1,7 @@
 def installApp() {
     echo "Installing the application... 2"
+    sh "hostname"
+    sh "npm -v"
     // sh "npm install"
 }
 def buildApp() {
